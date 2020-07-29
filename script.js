@@ -1,33 +1,45 @@
 var pen = document.getElementById("pen");
 var board = document.getElementById("board");
-
+var count = 150;
 var both = 0;
 var counter = 0;
 
 function moveLeft(){
     var left = parseFloat(window.getComputedStyle(pen).getPropertyValue("left"));
-    if (left > 0) {
-        pen.style.left = left - .5 + "px";
-    }
+        if (left > 0 && count > 0) {
+            pen.style.left = left - .1 + "px";
+            count = count - 1;
+        } else if (left > 0) {
+            pen.style.left = left - .5 + "px";
+        }
 }
 
 function moveRight(){
     var left = parseFloat(window.getComputedStyle(pen).getPropertyValue("left"));
-    if (left < 780) {
+    if (left < 780 && count > 0) {
+        pen.style.left = left + .1 + "px";
+        count = count - 1;
+    } else if (left > 0) {
         pen.style.left = left + .5 + "px";
     }
 }
 
 function moveUp(){
     var top = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
-    if (top > 0) {
+    if (top > 0 && count > 0) {
+        pen.style.top = top - .1 + "px";
+        count = count - 1;
+    } else if (top > 0) {
         pen.style.top = top - .5 + "px";
     }
 }
 
 function moveDown(){
     var top = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
-    if (top < 555) {
+    if (top < 555 && count > 0) {
+        pen.style.top = top + .1 + "px";
+        count = count - 1;
+    } else if (top > 0) {
         pen.style.top = top + .5 + "px";
     }
 }
@@ -101,4 +113,5 @@ document.addEventListener("keydown", event => {
 document.addEventListener("keyup", event => {
     clearInterval(interval);
     both = 0;
+    count = 150;
 });
