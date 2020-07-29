@@ -1,6 +1,6 @@
 var pen = document.getElementById("pen");
 var board = document.getElementById("board");
-var count = 150;
+var count = 200;
 var both = 0;
 var counter = 0;
 
@@ -113,5 +113,5 @@ document.addEventListener("keydown", event => {
 document.addEventListener("keyup", event => {
     clearInterval(interval);
     both = 0;
-    count = 150;
+    count = 200;
 });
