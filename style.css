@@ -71,10 +71,29 @@ h1 {
 }
 
 #board {
-    height: 575px;
+    height: 595px;
     width: 800px;
     background-color: lightgoldenrodyellow;
     position: relative;
+}
+
+#blockBottom {
+    position: relative;
+    top: 575px;
+    width: 800px;
+    height: 21px;
+    background-color: black;
+    z-index: 1000;
+}
+
+#blockRight {
+    position: relative;
+    left: 780px;
+    top: -30px;
+    width: 23px;
+    height: 595px;
+    background-color: black;
+    z-index: 1000;
 }
 
 #pen {
@@ -95,7 +114,6 @@ h1 {
     height: 20px;
     background-color:rgba(0, 0, 0, 0);
     position: absolute;
-
 }
 
 td {

@@ -5,6 +5,7 @@ var both = 0;
 var counter = 0;
 var paint = 0;
 
+
 function moveLeft(){
     var left = parseFloat(window.getComputedStyle(pen).getPropertyValue("left"));
         if (left > 0 && count > 0){
@@ -38,10 +39,10 @@ function moveUp(){
 
 function moveDown(){
     var top = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
-    if (top < 545 && count > 0) {
+    if (top < 565 && count > 0) {
         pen.style.top = top + .1 + "px";
         count--;
-    } else if (top < 545) {
+    } else if (top < 565) {
         pen.style.top = top + .5 + "px";
     }
 }
@@ -151,16 +152,17 @@ document.addEventListener("keydown", event => {
         }
     }
     if (paint == 1 && counter % 2 == 0 ){
-        var dot = document.createElement("div");
-        dot.setAttribute("class", "dot");
         var dotLastTop = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
         var dotLastLeft = parseFloat(window.getComputedStyle(pen).getPropertyValue("left"));
+        var dot = document.createElement("div");
+        dot.setAttribute("class", "dot");
         dot.style.top = dotLastTop + "px";
         dot.style.left = dotLastLeft + "px";
         dot.style.backgroundColor = pen.style.backgroundColor;
         dot.style.height = pen.style.height;
         dot.style.width = pen.style.width;
         board.appendChild(dot);
+        
     }
     counter++;
 });
