@@ -2,8 +2,8 @@
 
 
 body {
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
     background-color: black;
     font-family: 'Press Start 2P';
     color: white;
@@ -12,69 +12,81 @@ body {
 
 button {
     cursor: pointer;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    font-size: large;
+    height: 30px;
+    background-color: black;
+    border: none;
+    margin: 10px;
+}
+
+#instructions {
+    font-size: 20px;
 }
 
 #pink {
-    font-family: 'Press Start 2P';
     color: pink;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#pink:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #blue {
-    font-family: 'Press Start 2P';
     color: blue;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#blue:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #green {
-    font-family: 'Press Start 2P';
     color: green;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#green:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #yellow {
-    font-family: 'Press Start 2P';
     color: yellow;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#yellow:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #red {
-    font-family: 'Press Start 2P';
     color: red;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#red:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #brown {
-    font-family: 'Press Start 2P';
     color: brown;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#brown:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #erase {
-    font-family: 'Press Start 2P';
     color: white;
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    border: none;
+}
+
+#erase:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#move {
+    color: white;
+}
+
+#move:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 h1 {
@@ -105,16 +117,18 @@ h1 {
 .dot {
     width: 20px;
     height: 20px;
-    background-color:lightgoldenrodyellow;
+    background-color:rgba(0, 0, 0, 0);
     position: absolute;
-  
+
 }
 
 td {
-    padding-left: 85px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
 }
 
-button {
-    margin: 20px;
+table {
+    padding-top: 20px;
 }
+
