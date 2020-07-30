@@ -38,10 +38,10 @@ function moveUp(){
 
 function moveDown(){
     var top = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
-    if (top < 545 && count > 0) {
+    if (top < 565 && count > 0) {
         pen.style.top = top + .1 + "px";
         count--;
-    } else if (top < 545) {
+    } else if (top < 565) {
         pen.style.top = top + .5 + "px";
     }
 }
