@@ -18,10 +18,10 @@ function moveLeft(){
 
 function moveRight(){
     var left = parseFloat(window.getComputedStyle(pen).getPropertyValue("left"));
-    if (left < 780 && count > 0) {
+    if (left < 770 && count > 0) {
         pen.style.left = left + .1 + "px";
         count--;
-    } else if (left < 780) {
+    } else if (left < 770) {
         pen.style.left = left + .5 + "px";
     }
 }
@@ -38,12 +38,27 @@ function moveUp(){
 
 function moveDown(){
     var top = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
-    if (top < 555 && count > 0) {
+    if (top < 545 && count > 0) {
         pen.style.top = top + .1 + "px";
         count--;
-    } else if (top < 555) {
+    } else if (top < 545) {
         pen.style.top = top + .5 + "px";
     }
+}
+
+function changeSmall() {
+    pen.style.height = "10px";
+    pen.style.width = "10px";
+}
+
+function changeMedium() {
+    pen.style.height = "20px";
+    pen.style.width = "20px";
+}
+
+function changeLarge() {
+    pen.style.height = "30px";
+    pen.style.width = "30px";
 }
 
 function changeWhite(){
@@ -57,7 +72,6 @@ function changeBlack(){
     pen.style.backgroundColor = "black";
     pen.style.border = "1px solid white";
 }
-
 
 function changePink(){
     paint = 1;
@@ -144,6 +158,8 @@ document.addEventListener("keydown", event => {
         dot.style.top = dotLastTop + "px";
         dot.style.left = dotLastLeft + "px";
         dot.style.backgroundColor = pen.style.backgroundColor;
+        dot.style.height = pen.style.height;
+        dot.style.width = pen.style.width;
         board.appendChild(dot);
     }
     counter++;
