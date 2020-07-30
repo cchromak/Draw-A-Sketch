@@ -45,32 +45,60 @@ function moveDown(){
     }
 }
 
+function changeWhite(){
+    pen.style.backgroundColor = "white";
+    pen.style.border = "1px solid black";
+}
+
+function changeBlack(){
+    pen.style.backgroundColor = "black";
+    pen.style.border = "1px solid white";
+}
+
+
 function changePink(){
     pen.style.backgroundColor = "pink";
+    pen.style.border = "1px solid black";
 }
 
 function changeRed(){
     pen.style.backgroundColor = "red";
+    pen.style.border = "1px solid black";
 }
 
 function changeGreen(){
     pen.style.backgroundColor = "green";
+    pen.style.border = "1px solid black";
 }
 
 function changeYellow(){
     pen.style.backgroundColor = "yellow";
+    pen.style.border = "1px solid black";
 }
 
 function changeBlue(){
     pen.style.backgroundColor = "blue";
+    pen.style.border = "1px solid black";
+}
+
+function changePurple(){
+    pen.style.backgroundColor = "purple";
+    pen.style.border = "1px solid black";
 }
 
 function changeBrown(){
     pen.style.backgroundColor = "brown";
+    pen.style.border = "1px solid black";
+}
+
+function changeOrange(){
+    pen.style.backgroundColor = "orange";
+    pen.style.border = "1px solid black";
 }
 
 function moveCursor(){
     pen.style.backgroundColor ="rgba(0, 0, 0, 0)";
+    pen.style.border = "1px solid black";
 }
 
 function erase(){

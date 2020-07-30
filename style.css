@@ -21,8 +21,20 @@ button {
     margin: 10px;
 }
 
-#instructions {
-    font-size: 20px;
+#white {
+    color: white;
+}
+
+#white:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#black {
+    color: rgb(102, 102, 102);
+}
+
+#black:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 #pink {
@@ -70,6 +82,22 @@ button {
 }
 
 #brown:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#purple {
+    color: purple;
+}
+
+#purple:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#orange {
+    color: orange;
+}
+
+#orange:hover {
     background-color: rgb(53, 53, 53);
 }
 
@@ -127,6 +155,11 @@ td {
     padding-right: 30px;
     
 }
+
+#instructions {
+    font-size: 20px;
+}
+
 
 table {
     padding-top: 20px;
