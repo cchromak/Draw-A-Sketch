@@ -81,7 +81,7 @@ h1 {
     position: relative;
     top: 575px;
     width: 800px;
-    height: 21px;
+    height: 25px;
     background-color: black;
     z-index: 1000;
 }
@@ -90,7 +90,7 @@ h1 {
     position: relative;
     left: 780px;
     top: -30px;
-    width: 23px;
+    width: 25px;
     height: 595px;
     background-color: black;
     z-index: 1000;
