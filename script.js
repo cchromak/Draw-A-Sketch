@@ -3,6 +3,7 @@ var board = document.getElementById("board");
 var count = 200;
 var both = 0;
 var counter = 0;
+var paint = 0;
 
 function moveLeft(){
     var left = parseFloat(window.getComputedStyle(pen).getPropertyValue("left"));
@@ -46,63 +47,76 @@ function moveDown(){
 }
 
 function changeWhite(){
+    paint = 1;
     pen.style.backgroundColor = "white";
     pen.style.border = "1px solid black";
 }
 
 function changeBlack(){
+    paint = 1;
     pen.style.backgroundColor = "black";
     pen.style.border = "1px solid white";
 }
 
 
 function changePink(){
+    paint = 1;
     pen.style.backgroundColor = "pink";
     pen.style.border = "1px solid black";
 }
 
 function changeRed(){
+    paint = 1;
     pen.style.backgroundColor = "red";
     pen.style.border = "1px solid black";
 }
 
 function changeGreen(){
+    paint = 1;
     pen.style.backgroundColor = "green";
     pen.style.border = "1px solid black";
 }
 
 function changeYellow(){
+    paint = 1;
     pen.style.backgroundColor = "yellow";
     pen.style.border = "1px solid black";
 }
 
 function changeBlue(){
+    paint = 1;
     pen.style.backgroundColor = "blue";
     pen.style.border = "1px solid black";
 }
 
 function changePurple(){
+    paint = 1;
     pen.style.backgroundColor = "purple";
     pen.style.border = "1px solid black";
 }
 
 function changeBrown(){
+    paint = 1;
     pen.style.backgroundColor = "brown";
     pen.style.border = "1px solid black";
 }
 
 function changeOrange(){
+    paint = 1;
     pen.style.backgroundColor = "orange";
     pen.style.border = "1px solid black";
 }
 
 function moveCursor(){
+    paint = 0;
     pen.style.backgroundColor ="rgba(0, 0, 0, 0)";
     pen.style.border = "1px solid black";
 }
 
 function erase(){
+    paint = 1;
     pen.style.backgroundColor = "lightgoldenrodyellow";
+    pen.style.border = "1px solid black";
 }
 
 
@@ -122,7 +136,7 @@ document.addEventListener("keydown", event => {
             interval = setInterval(moveDown, 1);
         }
     }
-    if (counter % 2 == 0 ){
+    if (paint == 1 && counter % 2 == 0 ){
         var dot = document.createElement("div");
         dot.setAttribute("class", "dot");
         var dotLastTop = parseFloat(window.getComputedStyle(pen).getPropertyValue("top"));
