@@ -12,7 +12,7 @@ To draw select a color and paint brush size. Then use the arrow keys to move aro
 also the abilities to move the cursor and erase paint. Simply select these actions and move 
 with the arrow keys.
 
-## check it out
+## Check it out
 https://cchromak.github.io/Draw-A-Sketch/
 
 
